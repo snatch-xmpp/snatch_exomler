@@ -7,7 +7,7 @@ parsed(Bytes) ->
     tr(exomler:decode(Bytes)).
 
 encode(XML) ->
-    exomler:encode(rt(Bytes)).
+    exomler:encode(rt(XML)).
 
 tr({Tag, Attrs, Children}) ->
     {xmlel, Tag, Attrs, tr(Children)};

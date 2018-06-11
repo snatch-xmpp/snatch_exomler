@@ -1,0 +1,12 @@
+{application, snatch_exomler, [
+    {description, "Snatch XML parser wrapper for exomler"},
+    {vsn, git},
+    {registered, []},
+    {applications, [kernel,
+                    stdlib,
+                    exomler]},
+    {env, []},
+    {maintainers, ["Manuel Rubio"]},
+    {licenses, ["Apache License 2.1"]},
+    {links, [{"Github", "https://github.com/snatch-xmpp/snatch_exomler"}]}
+]}.

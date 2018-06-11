@@ -1,9 +1,9 @@
 -module(snatch_exomler).
 -author('manuel@altenwald.com').
 
--export([parsed/1, encode/1]).
+-export([parse/1, encode/1]).
 
-parsed(Bytes) ->
+parse(Bytes) ->
     tr(exomler:decode(Bytes)).
 
 encode(XML) ->
